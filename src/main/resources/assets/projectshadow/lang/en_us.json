@@ -1,0 +1,50 @@
+{
+	// Creative Tab
+	"itemGroup.projectshadowtab":"Project Shadow",
+
+	// Items
+	"item.projectshadow.psitem_copperaxe" : "Copper Axe",
+
+	// Blocks
+	// - Metal Ores
+	"block.projectshadow.psblock_ore_hematite" : "Hematite ore",
+	"block.projectshadow.psblock_ore_lead" : "Lead ore",
+	"block.projectshadow.psblock_ore_mithril" : "Mithril ore",
+	"block.projectshadow.psblock_ore_nickel" : "Nickel ore",
+	"block.projectshadow.psblock_ore_platinum" : "Platinum ore",
+	"block.projectshadow.psblock_ore_silver" : "Silver ore",
+	"block.projectshadow.psblock_ore_tin" : "Tin ore",
+	"block.projectshadow.psblock_ore_titanium" : "Titanium ore",
+	"block.projectshadow.psblock_ore_tungsten" : "Tungstin ore",
+	"block.projectshadow.psblock_ore_uranium" : "Urainium ore",
+	"block.projectshadow.psblock_ore_zinc" : "Zinc ore",
+	
+	// - Gem Ores
+	"block.projectshadow.psblock_ore_amber" : "Amber ore",
+	"block.projectshadow.psblock_ore_amethyst" : "Amethyst ore",
+	"block.projectshadow.psblock_ore_aquamarine" : "Aquamarine ore",
+	"block.projectshadow.psblock_ore_jade" : "Jade ore",
+	"block.projectshadow.psblock_ore_moonstone" : "Moonstone ore",
+	"block.projectshadow.psblock_ore_onyx" : "Onyx ore",
+	"block.projectshadow.psblock_ore_opalstone" : "Opal stone ore",
+	"block.projectshadow.psblock_ore_painite" : "Painite ore",
+	"block.projectshadow.psblock_ore_pinkquartz" : "Pink quartz ore",
+	"block.projectshadow.psblock_ore_ruby" : "Ruby ore",
+	"block.projectshadow.psblock_ore_sapphire" : "Sapphire ore",
+	"block.projectshadow.psblock_ore_sunstone" : "Sunstone ore",
+	"block.projectshadow.psblock_ore_topaz" : "Topaz ore",
+	"block.projectshadow.psblock_ore_turquoise" : "Turqupose ore",
+	"block.projectshadow.psblock_ore_zircon" : "Zircon ore",
+	
+	// Machines
+	"block.projectshadow.psblock_anvil" : "Jewellers Anvil",
+	"block.projectshadow.psblock_grindstone" : "Jewellers Grindstone",
+	"block.projectshadow.psblock_jewellerstable" : "Jewellers Table",
+	"block.projectshadow.psblock_smeltery" : "Jewellers Smeltery",
+	
+	// Multiblock components
+	"block.projectshadow.psblock_allow_brick" : "Alloy bricks",
+	"block.projectshadow.psblock_blastfurnace_brick" : "Blast furnace bricks",
+	"block.projectshadow.psblock_blastfurnace_hearth" : "Blast furnace hearth"
+		
+}
