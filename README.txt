@@ -1,6 +1,17 @@
+--------------------------------------------------------------------------------------
+Project shadow Gem
+
+This mod is primarily a blacksmithing, Jewel smithing, storage and combat mod.
+However, may contain other random quality of life or trinket items.
+
+This mod is Inspired by a few of my favorite games
+- Thief the Dark Age
+- Diablo
+--------------------------------------------------------------------------------------
+
 
 Source installation information for modders
--------------------------------------------
+--------------------------------------------------------------------------------------
 This code follows the Minecraft Forge installation methodology. It will apply
 some small patches to the vanilla MCP source code, giving you and it access 
 to some of the data and functions you need to build a successful mod.
