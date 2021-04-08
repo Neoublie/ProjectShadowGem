@@ -2,39 +2,22 @@ package com.dragontechdev.projectshadow.core.init;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemTier;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import com.dragontechdev.projectshadow.ProjectShadow;
+import com.dragontechdev.projectshadow.common.items.tools.psItem_Weapon_BrassKnuckles;
+import com.dragontechdev.projectshadow.common.items.tools.psItem_Weapon_MithrilSword;
+import com.dragontechdev.projectshadow.common.items.tools.psItem_Weapon_SilverSword;
 
 public class ItemInit {
-
-	// Tools
-//	public static final Item copperHammer = new Item(defaultBuilder());
-			
-	// Ingots
-//	public static final Item hematiteIngot = new Item(defaultBuilder());
-//	public static final Item leadIngot = new Item(defaultBuilder());
-//	public static final Item mithrilIngot = new Item(defaultBuilder());
-//	public static final Item nickelIngot = new Item(defaultBuilder());
-//	public static final Item platinumIngot = new Item(defaultBuilder());
-//	public static final Item silverIngot = new Item(defaultBuilder());
-//	public static final Item tinIngot = new Item(defaultBuilder());
-//	public static final Item titaniumIngot = new Item(defaultBuilder());
-//	public static final Item tungstenIngot = new Item(defaultBuilder());
-//	public static final Item uraniumIngot = new Item(defaultBuilder());
-//	public static final Item zincIngot = new Item(defaultBuilder());
-	
-	// Alloy Ingots
-//	public static final Item bronzeIngot = new Item(defaultBuilder());
-//	public static final Item steelIngot = new Item(defaultBuilder());
-
-	
-	// Misc Gems
-//	public static final Item pearlGem = new Item(defaultBuilder());
-	
-	// Weapons
-	
+		
+	// DeferredRegistry Object
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjectShadow.MOD_ID);
+		
 	// Armor
 	
 	// Amulets
@@ -47,19 +30,43 @@ public class ItemInit {
 	
 	// Bracelets
 	
-	// Ancklets
+	// Anklets
 	
 	// MISC
-//	public static final Item HerodricCube = new Item(defaultBuilder());
+	//public static final RegistryObject<psItem_Misc_HerodricCube> PSITEM_MISC_HERODRICCUBE = ITEMS.register("psItem_Misc_HerodricCube", () -> new psItem_Weapon_BrassKnuckles(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	
+	// Tools
+	public static final RegistryObject<Item> PSITEM_TOOL_COPPERAXE = ITEMS.register("psitem_tool_copperaxe", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	
+	//Weapons
+	//public static final RegistryObject<Item> PSITEM_WEAPON_BRASS_KNUCKLES = ITEMS.register("psitem_weapon_brass_knuckles", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<psItem_Weapon_BrassKnuckles> PSITEM_WEAPON_BRASS_KNUCKLES = ITEMS.register("psitem_weapon_brass_knuckles", () -> new psItem_Weapon_BrassKnuckles(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<psItem_Weapon_SilverSword> PSITEM_WEAPON_SILVER_SWORD = ITEMS.register("psitem_weapon_silver_sword", () -> new psItem_Weapon_SilverSword(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<psItem_Weapon_MithrilSword> PSITEM_WEAPON_MITHRIL_SWORD = ITEMS.register("psitem_weapon_mithril_sword", () -> new psItem_Weapon_MithrilSword(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	
 	
 	
+	// Ingots
+	public static final RegistryObject<Item> PSITEM_INGOT_HEMATITE = ITEMS.register("psitem_ingot_hematite", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_LEAD = ITEMS.register("psitem_ingot_lead", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_MITHRIL = ITEMS.register("psitem_ingot_mithril", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_NICKEL = ITEMS.register("psitem_ingot_nickel", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_PLATINUM = ITEMS.register("psitem_ingot_platinum", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_SILVER = ITEMS.register("psitem_ingot_silver", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_TIN = ITEMS.register("psitem_ingot_tin", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_TITANIUM = ITEMS.register("psitem_ingot_titanium", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_TUNGSTEN = ITEMS.register("psitem_ingot_tungsten", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_URANIUM = ITEMS.register("psitem_ingot_uranium", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_ZINC = ITEMS.register("psitem_ingot_zinc", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	
-	// DeferredRegistry Object
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjectShadow.MOD_ID);
-	
-	// Items
-	public static final RegistryObject<Item> PSITEM_COPPERAXE = ITEMS.register("psitem_copperaxe", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	// Alloy Ingots
+	public static final RegistryObject<Item> PSITEM_INGOT_BRASS = ITEMS.register("psitem_ingot_brass", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_BRONZE = ITEMS.register("psitem_ingot_bronze", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_CONSTANTAN = ITEMS.register("psitem_ingot_constantan", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_ELECTRUM = ITEMS.register("psitem_ingot_electrum", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_REDSTONE = ITEMS.register("psitem_ingot_redstone", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_REFINED_NETHERITE = ITEMS.register("psitem_ingot_refined_netherite", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_INGOT_STEEL = ITEMS.register("psitem_ingot_steel", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	
 	// Block Items
 	public static final RegistryObject<BlockItem> PSBLOCK_ORE_HEMATITE = ITEMS.register("psblock_ore_hematite", () -> new BlockItem(BlockInit.ORE_HEMATITE.get(), new Item.Properties().tab(ProjectShadow.psCreativeTAB)));//ItemGroup.TAB_BUILDING_BLOCKS)));

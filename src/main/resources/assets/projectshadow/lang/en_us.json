@@ -1,11 +1,48 @@
 {
 	// Creative Tab
-	"itemGroup.projectshadowtab":"Project Shadow",
+	"itemGroup.projectshadowtab":"Project Shadow Gem",
 
+	//-------------------------------------------------------------------------
 	// Items
-	"item.projectshadow.psitem_copperaxe" : "Copper Axe",
-
+	//-------------------------------------------------------------------------
+	
+	// Tools
+	"item.projectshadow.psitem_tool_copperaxe" : "Copper axe",
+	
+	// Weapons
+	"item.projectshadow.psitem_weapon_brass_knuckles" : "Brass knuckles",
+	"item.projectshadow.psitem_weapon_mithril_sword" : "Mithril sword",
+	"item.projectshadow.psitem_weapon_silver_sword" : "Silver sword",
+	"item.projectshadow.psitem_weapon_steel_sword" : "Steel sword",
+	
+	// Ingots
+	"item.projectshadow.psitem_ingot_hematite" : "Hematite ingot",
+	"item.projectshadow.psitem_ingot_lead" : "Lead ingot",
+	"item.projectshadow.psitem_ingot_mithril" : "Mithril ingot",
+	"item.projectshadow.psitem_ingot_nickel" : "Nickel ingot",
+	"item.projectshadow.psitem_ingot_platinum" : "Platinum ingot",
+	"item.projectshadow.psitem_ingot_silver" : "Silver ingot",
+	"item.projectshadow.psitem_ingot_tin" : "Tin ingot",
+	"item.projectshadow.psitem_ingot_titanium" : "Titanium ingot",
+	"item.projectshadow.psitem_ingot_tungsten" : "Tungsten ingot",
+	"item.projectshadow.psitem_ingot_uranium" : "Uranium ingot",
+	"item.projectshadow.psitem_ingot_zinc" : "Zinc ingot",
+	
+	// Alloys
+	"item.projectshadow.psitem_ingot_brass" : "Brass ingot",
+	"item.projectshadow.psitem_ingot_bronze" : "Bronze ingot",
+	"item.projectshadow.psitem_ingot_constantan" : "Constantan ingot",
+	"item.projectshadow.psitem_ingot_electrum" : "Electrum ingot",
+	"item.projectshadow.psitem_ingot_redstone" : "Redstone ingot",
+	"item.projectshadow.psitem_ingot_refined_netherite" : "Refined Netherite",
+	"item.projectshadow.psitem_ingot_steel" : "Steel ingot",
+	
+	//"item.projectshadow.psitem_ingot_" : " ingot",
+	
+	//-------------------------------------------------------------------------
 	// Blocks
+	//-------------------------------------------------------------------------
+	
 	// - Metal Ores
 	"block.projectshadow.psblock_ore_hematite" : "Hematite ore",
 	"block.projectshadow.psblock_ore_lead" : "Lead ore",
