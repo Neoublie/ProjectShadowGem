@@ -19,7 +19,10 @@ public class ItemInit {
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjectShadow.MOD_ID);
 		
 	// Armor
-	
+	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGHELMET = ITEMS.register("psitem_armor_divinghelmet", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGHARNESS = ITEMS.register("psitem_armor_divingharness", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGFLIPPERS = ITEMS.register("psitem_armor_divingflippers", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+
 	// Amulets
 	
 	// Rings
@@ -33,7 +36,7 @@ public class ItemInit {
 	// Anklets
 	
 	// MISC
-	//public static final RegistryObject<psItem_Misc_HerodricCube> PSITEM_MISC_HERODRICCUBE = ITEMS.register("psItem_Misc_HerodricCube", () -> new psItem_Weapon_BrassKnuckles(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGTANK = ITEMS.register("psitem_armor_divingtank", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	
 	// Tools
 	public static final RegistryObject<Item> PSITEM_TOOL_COPPERAXE = ITEMS.register("psitem_tool_copperaxe", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
@@ -89,6 +92,8 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PSBLOCK_ALLOY_BRICK = ITEMS.register("psblock_alloy_brick", () -> new BlockItem(BlockInit.MULTIBLOCK_ALLOY_BRICK.get(), new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_BLASTFURNACE_BRICK = ITEMS.register("psblock_blastfurnace_brick", () -> new BlockItem(BlockInit.MULTIBLOCK_BLASTFURNACE_BRICK.get(), new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_BLASTFURNACE_HEARTH = ITEMS.register("psblock_blastfurnace_hearth", () -> new BlockItem(BlockInit.MULTIBLOCK_BLASTFURNACE_HEARTH.get(), new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
+	
+	public static final RegistryObject<BlockItem> PSBLOCK_AIR_COMPRESSOR = ITEMS.register("psblock_air_compressor", () -> new BlockItem(BlockInit.MULTIBLOCK_BLASTFURNACE_HEARTH.get(), new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	
 	// Chipped Gems
 //	public static final Item amberChippedGem = new Item(defaultBuilder());

@@ -25,8 +25,10 @@ import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Zirco
 import com.dragontechdev.projectshadow.common.blocks.ores.metals.*;
 import com.dragontechdev.projectshadow.ProjectShadow;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.AbstractBlock.Properties;
 import net.minecraft.block.material.Material;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -67,7 +69,8 @@ public class BlockInit {
 	public static final RegistryObject<Block> ORE_ZIRCON = BASICBLOCKS.register("psblock_ore_zircon", () -> new psBlock_Ore_Zircon(Properties.of(Material.STONE)));
 	
 	// Machines
-	public static final RegistryObject<Block> MACHINE_ANVIL = BLOCKS.register("psblock_anvil", () -> new psBlock_Anvil(Properties.of(Material.METAL)));
+	//public static final RegistryObject<Block> MACHINE_ANVIL = BLOCKS.register("psblock_anvil", () -> new psBlock_Anvil(Properties.of(Material.METAL)));
+	public static final RegistryObject<Block> MACHINE_ANVIL = BLOCKS.register("psblock_anvil", () -> new psBlock_Anvil(Properties.of(Material.METAL).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)));
 	public static final RegistryObject<Block> MACHINE_GRINDSTONE = BLOCKS.register("psblock_grindstone", () -> new psBlock_GrindStone(Properties.of(Material.METAL)));
 	public static final RegistryObject<Block> MACHINE_JEWELLERSTABLE = BLOCKS.register("psblock_jewellerstable", () -> new psBlock_JewellersTable(Properties.of(Material.METAL)));
 	public static final RegistryObject<Block> MACHINE_SMELTERY = BLOCKS.register("psblock_smeltery", () -> new psBlock_Smeltery(Properties.of(Material.METAL)));
