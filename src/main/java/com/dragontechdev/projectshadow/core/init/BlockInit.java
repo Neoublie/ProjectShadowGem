@@ -23,20 +23,26 @@ import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Topaz
 import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Turquoise;
 import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Zircon;
 import com.dragontechdev.projectshadow.common.blocks.ores.metals.*;
+import com.dragontechdev.projectshadow.common.containers.psContainer_Anvil;
 import com.dragontechdev.projectshadow.ProjectShadow;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.AbstractBlock.Properties;
 import net.minecraft.block.material.Material;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
 
 public class BlockInit {
 	
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ProjectShadow.MOD_ID);
 	public static final DeferredRegister<Block> BASICBLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ProjectShadow.MOD_ID);
+	
+	public static final DeferredRegister<ContainerType<?>> CONTAINERS = DeferredRegister.create(ForgeRegistries.CONTAINERS, ProjectShadow.MOD_ID);
 		
 	//ORES
 	public static final RegistryObject<Block> ORE_HEMATITE = BASICBLOCKS.register("psblock_ore_hematite", () -> new psBlock_Ore_Hematite(Properties.of(Material.STONE)));
@@ -74,6 +80,8 @@ public class BlockInit {
 	public static final RegistryObject<Block> MACHINE_GRINDSTONE = BLOCKS.register("psblock_grindstone", () -> new psBlock_GrindStone(Properties.of(Material.METAL)));
 	public static final RegistryObject<Block> MACHINE_JEWELLERSTABLE = BLOCKS.register("psblock_jewellerstable", () -> new psBlock_JewellersTable(Properties.of(Material.METAL)));
 	public static final RegistryObject<Block> MACHINE_SMELTERY = BLOCKS.register("psblock_smeltery", () -> new psBlock_Smeltery(Properties.of(Material.METAL)));
+	
+	public static final RegistryObject<ContainerType<psContainer_Anvil>> JEWELLERS_ANVIL_CONTAINER = CONTAINERS.register("jewellers_anvil_container", () -> IForgeContainerType.create(psContainer_Anvil::new));
 	
 	// Multiblock Components
 	public static final RegistryObject<Block> MULTIBLOCK_ALLOY_BRICK = BLOCKS.register("psblock_alloy_brick", () -> new psBlock_AlloyBrick(Properties.of(Material.METAL)));

@@ -9,6 +9,9 @@ This mod is Inspired by a few of my favorite games
 - Diablo
 --------------------------------------------------------------------------------------
 
+Special thanks to WayOfTime and his mod "Blood Magic" that I used as a coding Reference 
+as well as TurtyWurty for his YouTube video series that got be started back into modding.
+
 
 Source installation information for modders
 --------------------------------------------------------------------------------------
