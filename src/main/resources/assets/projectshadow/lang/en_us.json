@@ -82,6 +82,9 @@
 	// Multiblock components
 	"block.projectshadow.psblock_alloy_brick" : "Alloy bricks",
 	"block.projectshadow.psblock_blastfurnace_brick" : "Blast furnace bricks",
-	"block.projectshadow.psblock_blastfurnace_hearth" : "Blast furnace hearth"
+	"block.projectshadow.psblock_blastfurnace_hearth" : "Blast furnace hearth",
+	
+	// MISC
+	"block.projectshadow.display_case" : "Display case"
 		
 }
