@@ -35,10 +35,9 @@ public class psItem_Weapon_SteelSword extends SwordItem {
 	
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, World world, List<ITextComponent> textcomponent,
-			ITooltipFlag tooltipflag) {
+	public void addInformation(ItemStack itemstack, World world, List<ITextComponent> textcomponent, ITooltipFlag tooltipflag) {
 		// TODO Auto-generated method stub
-		super.appendHoverText(itemstack, world, textcomponent, tooltipflag);
+		super.addInformation(itemstack, world, textcomponent, tooltipflag);
 		
 		//textcomponent.add(new TranslationTextComponent("tooltip:psitem_weapon_steelsword_tooltip"));
 		textcomponent.add(new StringTextComponent("Hold "+ "\u00A7e" + "Shift" + "\u00A77" + " for more information"));

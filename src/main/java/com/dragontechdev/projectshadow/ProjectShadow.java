@@ -12,7 +12,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.dragontechdev.projectshadow.core.init.BlockInit;
+import com.dragontechdev.projectshadow.core.init.ContainerTypeInit;
 import com.dragontechdev.projectshadow.core.init.ItemInit;
+import com.dragontechdev.projectshadow.core.init.TileEntityTypeInit;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ProjectShadow.MOD_ID)
@@ -28,12 +30,15 @@ public class ProjectShadow
     	IEventBus EventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	EventBus.addListener(this::setup);
     	
-    	// Load Item Registry
-    	ItemInit.ITEMS.register(EventBus);
-    	
     	// Load Block Registry
     	BlockInit.BASICBLOCKS.register(EventBus);
     	BlockInit.BLOCKS.register(EventBus);
+    	
+    	TileEntityTypeInit.TILE_ENTITY_TYPE.register(EventBus);
+    	ContainerTypeInit.CONTAINER_TYPE.register(EventBus);
+    	
+    	// Load Item Registry
+    	ItemInit.ITEMS.register(EventBus);
     	
     	
         MinecraftForge.EVENT_BUS.register(this);
@@ -48,7 +53,7 @@ public class ProjectShadow
  	public static final ItemGroup psCreativeTAB = new ItemGroup("projectshadowtab")
  	{
  		@Override
- 		public ItemStack makeIcon()
+ 		public ItemStack createIcon()
  		{
  			return new ItemStack(Blocks.ACACIA_BUTTON.getBlock());
  			//return new ItemStack(BlockInit.BASICBLOCKS.ORE_JADE.getBlock());

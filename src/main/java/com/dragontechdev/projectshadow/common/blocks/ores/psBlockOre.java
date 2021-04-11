@@ -9,7 +9,7 @@ public class psBlockOre extends psBlock{
 
 	public psBlockOre(Properties prop) {
 		super(prop);
-		prop.harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops().sound(SoundType.STONE);
+		prop.harvestTool(ToolType.PICKAXE).setRequiresTool().sound(SoundType.STONE);
 	}
 
 }

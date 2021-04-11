@@ -25,10 +25,9 @@ public class psItem_Weapon_BrassKnuckles extends psItem {
 	
 	@Override
 	@OnlyIn(Dist.CLIENT)
-	public void appendHoverText(ItemStack itemstack, World world, List<ITextComponent> textcomponent,
-			ITooltipFlag tooltipflag) {
+	public void addInformation(ItemStack itemstack, World world, List<ITextComponent> textcomponent, ITooltipFlag tooltipflag) {
 		// TODO Auto-generated method stub
-		super.appendHoverText(itemstack, world, textcomponent, tooltipflag);
+		super.addInformation(itemstack, world, textcomponent, tooltipflag);
 		
 		//textcomponent.add(new TranslationTextComponent("tooltip:psitem_weapon_steelsword_tooltip"));
 		textcomponent.add(new StringTextComponent("Hold "+ "\u00A7e" + "Shift" + "\u00A77" + " for more information"));
@@ -42,7 +41,7 @@ public class psItem_Weapon_BrassKnuckles extends psItem {
 	@Override
 	public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity) {
 		// TODO Auto-generated method stub
-		player.addEffect(new EffectInstance(Effects.DAMAGE_BOOST, 200, 5));
+		player.addPotionEffect(new EffectInstance(Effects.STRENGTH, 200, 5));
 		return super.onLeftClickEntity(stack, player, entity);
 		
 	}	
