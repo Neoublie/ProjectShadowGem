@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "projectshadow:block/psblock_displaycase", "y" : 270  },
+        "facing=east": { "model": "projectshadow:block/psblock_displaycase", "y" : 90 },
+        "facing=south": { "model": "projectshadow:block/psblock_displaycase"},
+        "facing=west": { "model": "projectshadow:block/psblock_displaycase", "y" : 180 }
+    }
+}

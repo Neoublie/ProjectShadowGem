@@ -1,20 +1,22 @@
 package com.dragontechdev.projectshadow;
 
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.dragontechdev.projectshadow.core.init.BlockInit;
 import com.dragontechdev.projectshadow.core.init.ContainerTypeInit;
+import com.dragontechdev.projectshadow.core.init.FeatureInit;
 import com.dragontechdev.projectshadow.core.init.ItemInit;
 import com.dragontechdev.projectshadow.core.init.TileEntityTypeInit;
+
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ProjectShadow.MOD_ID)
@@ -40,7 +42,7 @@ public class ProjectShadow
     	// Load Item Registry
     	ItemInit.ITEMS.register(EventBus);
     	
-    	
+    	MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
@@ -49,16 +51,12 @@ public class ProjectShadow
 
     }
     
- // Custom ItemGroup TAB
  	public static final ItemGroup psCreativeTAB = new ItemGroup("projectshadowtab")
  	{
  		@Override
  		public ItemStack createIcon()
  		{
- 			return new ItemStack(Blocks.ACACIA_BUTTON.getBlock());
- 			//return new ItemStack(BlockInit.BASICBLOCKS.ORE_JADE.getBlock());
+ 			return new ItemStack(BlockInit.DISPLAY_CASE.get());
  		}
  	};
- 	
- 	
 }

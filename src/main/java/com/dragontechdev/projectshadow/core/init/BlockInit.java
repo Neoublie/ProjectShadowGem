@@ -1,7 +1,7 @@
 package com.dragontechdev.projectshadow.core.init;
 
 import com.dragontechdev.projectshadow.ProjectShadow;
-import com.dragontechdev.projectshadow.common.blocks.DisplayCaseBlock;
+import com.dragontechdev.projectshadow.common.blocks.psBlock_DisplayCase;
 import com.dragontechdev.projectshadow.common.blocks.machines.psBlock_Anvil;
 import com.dragontechdev.projectshadow.common.blocks.machines.psBlock_GrindStone;
 import com.dragontechdev.projectshadow.common.blocks.machines.psBlock_JewellersTable;
@@ -24,6 +24,7 @@ import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Sunst
 import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Topaz;
 import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Turquoise;
 import com.dragontechdev.projectshadow.common.blocks.ores.gems.psBlock_Ore_Zircon;
+import com.dragontechdev.projectshadow.common.blocks.ores.metals.psBlock_Ore_Copper;
 import com.dragontechdev.projectshadow.common.blocks.ores.metals.psBlock_Ore_Hematite;
 import com.dragontechdev.projectshadow.common.blocks.ores.metals.psBlock_Ore_Lead;
 import com.dragontechdev.projectshadow.common.blocks.ores.metals.psBlock_Ore_Mithril;
@@ -53,6 +54,7 @@ public class BlockInit {
 	public static final DeferredRegister<ContainerType<?>> CONTAINERS = DeferredRegister.create(ForgeRegistries.CONTAINERS, ProjectShadow.MOD_ID);
 		
 	//ORES
+	public static final RegistryObject<Block> ORE_COPPER = BASICBLOCKS.register("psblock_ore_copper", () -> new psBlock_Ore_Copper(Properties.create(Material.ROCK)));
 	public static final RegistryObject<Block> ORE_HEMATITE = BASICBLOCKS.register("psblock_ore_hematite", () -> new psBlock_Ore_Hematite(Properties.create(Material.ROCK)));
 	public static final RegistryObject<Block> ORE_LEAD = BASICBLOCKS.register("psblock_ore_lead", () -> new psBlock_Ore_Lead(Properties.create(Material.ROCK)));
 	public static final RegistryObject<Block> ORE_MITHRIL = BASICBLOCKS.register("psblock_ore_mithril", () -> new psBlock_Ore_Mithril(Properties.create(Material.ROCK)));
@@ -84,7 +86,7 @@ public class BlockInit {
 	
 	// Machines
 	public static final RegistryObject<Block> MACHINE_ANVIL = BLOCKS.register("psblock_anvil", () -> new psBlock_Anvil());
-	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("display_case", () -> new DisplayCaseBlock()); // TODO maybe re-purpose this from tutorial to something better 
+	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("psblock_displaycase", () -> new psBlock_DisplayCase()); // TODO maybe re-purpose this from tutorial to something better 
 	
 	//TODO build TileEntities for these
 	public static final RegistryObject<Block> MACHINE_GRINDSTONE = BLOCKS.register("psblock_grindstone", () -> new psBlock_GrindStone(Properties.create(Material.IRON)));

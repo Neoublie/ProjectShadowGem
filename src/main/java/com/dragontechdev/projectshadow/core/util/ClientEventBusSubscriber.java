@@ -1,7 +1,7 @@
 package com.dragontechdev.projectshadow.core.util;
 
 import com.dragontechdev.projectshadow.ProjectShadow;
-import com.dragontechdev.projectshadow.client.screens.DisplayCaseScreen;
+import com.dragontechdev.projectshadow.client.screens.psScreen_DisplayCase;
 import com.dragontechdev.projectshadow.core.init.ContainerTypeInit;
 
 import net.minecraft.client.gui.ScreenManager;
@@ -16,7 +16,7 @@ public class ClientEventBusSubscriber {
 
 	@SubscribeEvent
 	public static void clientSetup(FMLClientSetupEvent event) {
-		ScreenManager.registerFactory(ContainerTypeInit.DISPLAY_CASE_CONTAINER_TYPE.get(), DisplayCaseScreen::new);
+		ScreenManager.registerFactory(ContainerTypeInit.DISPLAY_CASE_CONTAINER_TYPE.get(), psScreen_DisplayCase::new);
 		
 	}
 }

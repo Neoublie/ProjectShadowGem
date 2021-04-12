@@ -1,17 +1,20 @@
 package com.dragontechdev.projectshadow.core.init;
 
+import com.dragontechdev.projectshadow.ProjectShadow;
+import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_BrassKnuckles;
+import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_MithrilSword;
+import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_SilverSword;
+import com.dragontechdev.projectshadow.common.materials.psCustomArmorMaterial;
+import com.dragontechdev.projectshadow.common.materials.psCustomToolMaterial;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import com.dragontechdev.projectshadow.ProjectShadow;
-import com.dragontechdev.projectshadow.common.items.tools.psItem_Weapon_BrassKnuckles;
-import com.dragontechdev.projectshadow.common.items.tools.psItem_Weapon_MithrilSword;
-import com.dragontechdev.projectshadow.common.items.tools.psItem_Weapon_SilverSword;
 
 public class ItemInit {
 		
@@ -22,6 +25,11 @@ public class ItemInit {
 	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGHELMET = ITEMS.register("psitem_armor_divinghelmet", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGHARNESS = ITEMS.register("psitem_armor_divingharness", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGFLIPPERS = ITEMS.register("psitem_armor_divingflippers", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	
+	public static final RegistryObject<Item> MITHRIL_HELMET = ITEMS.register("psitem_armor_mithril_helmet", () -> new ArmorItem(psCustomArmorMaterial.MITHRIL, EquipmentSlotType.HEAD, new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> MITHRIL_CHESTPLATE = ITEMS.register("psitem_armor_mithril_chestplate", () -> new ArmorItem(psCustomArmorMaterial.MITHRIL, EquipmentSlotType.CHEST, new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> MITHRIL_LEGGINGS = ITEMS.register("psitem_armor_mithril_leggings",  () -> new ArmorItem(psCustomArmorMaterial.MITHRIL, EquipmentSlotType.LEGS, new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<Item> MITHRIL_BOOTS = ITEMS.register("psitem_armor_mithril_boots", () -> new ArmorItem(psCustomArmorMaterial.MITHRIL, EquipmentSlotType.FEET, new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 
 	// Amulets
 	
@@ -44,12 +52,15 @@ public class ItemInit {
 	//Weapons
 	//public static final RegistryObject<Item> PSITEM_WEAPON_BRASS_KNUCKLES = ITEMS.register("psitem_weapon_brass_knuckles", () -> new Item(new Item.Properties().tab(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<psItem_Weapon_BrassKnuckles> PSITEM_WEAPON_BRASS_KNUCKLES = ITEMS.register("psitem_weapon_brass_knuckles", () -> new psItem_Weapon_BrassKnuckles(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
-	public static final RegistryObject<psItem_Weapon_SilverSword> PSITEM_WEAPON_SILVER_SWORD = ITEMS.register("psitem_weapon_silver_sword", () -> new psItem_Weapon_SilverSword(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
-	public static final RegistryObject<psItem_Weapon_MithrilSword> PSITEM_WEAPON_MITHRIL_SWORD = ITEMS.register("psitem_weapon_mithril_sword", () -> new psItem_Weapon_MithrilSword(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	//public static final RegistryObject<psItem_Weapon_SilverSword> PSITEM_WEAPON_SILVER_SWORD = ITEMS.register("psitem_weapon_silver_sword", () -> new psItem_Weapon_SilverSword(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	//public static final RegistryObject<psItem_Weapon_MithrilSword> PSITEM_WEAPON_MITHRIL_SWORD = ITEMS.register("psitem_weapon_mithril_sword", () -> new psItem_Weapon_MithrilSword(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	
-	
+	//Converted to use Material
+	public static final RegistryObject<SwordItem> PSITEM_WEAPON_SILVER_SWORD = ITEMS.register("psitem_weapon_silver_sword", () -> new SwordItem(psCustomToolMaterial.PSITEM_TOOL_SILVER, 5, -1f, new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<SwordItem> PSITEM_WEAPON_MITHRIL_SWORD = ITEMS.register("psitem_weapon_mithril_sword", () -> new SwordItem(psCustomToolMaterial.PSITEM_TOOL_MITHRIL, 5, -1f, new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	
 	// Ingots
+	public static final RegistryObject<Item> PSITEM_INGOT_COPPER = ITEMS.register("psitem_ingot_copper", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<Item> PSITEM_INGOT_HEMATITE = ITEMS.register("psitem_ingot_hematite", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<Item> PSITEM_INGOT_LEAD = ITEMS.register("psitem_ingot_lead", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<Item> PSITEM_INGOT_MITHRIL = ITEMS.register("psitem_ingot_mithril", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
@@ -72,6 +83,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> PSITEM_INGOT_STEEL = ITEMS.register("psitem_ingot_steel", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	
 	// Block Items
+	public static final RegistryObject<BlockItem> PSBLOCK_ORE_COPPER = ITEMS.register("psblock_ore_copper", () -> new BlockItem(BlockInit.ORE_COPPER.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_ORE_HEMATITE = ITEMS.register("psblock_ore_hematite", () -> new BlockItem(BlockInit.ORE_HEMATITE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));//ItemGroup.TAB_BUILDING_BLOCKS)));
 	public static final RegistryObject<BlockItem> PSBLOCK_ORE_LEAD = ITEMS.register("psblock_ore_lead", () -> new BlockItem(BlockInit.ORE_LEAD.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_ORE_MITHRIL = ITEMS.register("psblock_ore_mithril", () -> new BlockItem(BlockInit.ORE_MITHRIL.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
@@ -90,6 +102,7 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PSBLOCK_GRINDSTONE = ITEMS.register("psblock_grindstone", () -> new BlockItem(BlockInit.MACHINE_GRINDSTONE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_JEWELLERSTABLE = ITEMS.register("psblock_jewellerstable", () -> new BlockItem(BlockInit.MACHINE_JEWELLERSTABLE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_SMELTERY = ITEMS.register("psblock_smeltery", () -> new BlockItem(BlockInit.MACHINE_SMELTERY.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<BlockItem> PSBLOCK_DISPLAYCASE = ITEMS.register("psblock_displaycase", () -> new BlockItem(BlockInit.DISPLAY_CASE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	
 	public static final RegistryObject<BlockItem> PSBLOCK_ALLOY_BRICK = ITEMS.register("psblock_alloy_brick", () -> new BlockItem(BlockInit.MULTIBLOCK_ALLOY_BRICK.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_BLASTFURNACE_BRICK = ITEMS.register("psblock_blastfurnace_brick", () -> new BlockItem(BlockInit.MULTIBLOCK_BLASTFURNACE_BRICK.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));

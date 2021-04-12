@@ -6,6 +6,20 @@
 	// Items
 	//-------------------------------------------------------------------------
 	
+	// Armor
+	"item.projectshadow.psitem_armor_divinghelmet" : "Diving helme",
+	"item.projectshadow.psitem_armor_divingharness" : "Diving harness",
+	"item.projectshadow.psitem_armor_divingflippers" : "Flippers",
+	"item.projectshadow.psitem_armor_divingtank" : "Diving tank",
+		
+	"item.projectshadow.psitem_armor_mithril_helmet" : "Mithril Helm",
+	"item.projectshadow.psitem_armor_mithril_chestplate" : "Mithril Chestplate",
+	"item.projectshadow.psitem_armor_mithril_leggings" : "Mithril leggings",
+	"item.projectshadow.psitem_armor_mithril_boots" : "Mithril boots",
+	
+	// MISC
+		
+	
 	// Tools
 	"item.projectshadow.psitem_tool_copperaxe" : "Copper axe",
 	
@@ -16,6 +30,7 @@
 	"item.projectshadow.psitem_weapon_steel_sword" : "Steel sword",
 	
 	// Ingots
+	"item.projectshadow.psitem_ingot_copper" : "Copper ingot",
 	"item.projectshadow.psitem_ingot_hematite" : "Hematite ingot",
 	"item.projectshadow.psitem_ingot_lead" : "Lead ingot",
 	"item.projectshadow.psitem_ingot_mithril" : "Mithril ingot",
@@ -44,6 +59,7 @@
 	//-------------------------------------------------------------------------
 	
 	// - Metal Ores
+	"block.projectshadow.psblock_ore_copper" : "Copper ore",
 	"block.projectshadow.psblock_ore_hematite" : "Hematite ore",
 	"block.projectshadow.psblock_ore_lead" : "Lead ore",
 	"block.projectshadow.psblock_ore_mithril" : "Mithril ore",
@@ -85,6 +101,8 @@
 	"block.projectshadow.psblock_blastfurnace_hearth" : "Blast furnace hearth",
 	
 	// MISC
-	"block.projectshadow.display_case" : "Display case"
+	"block.projectshadow.psblock_displaycase" : "Display case",
+	
+	"container.projectshadow.psblock_displaycase" : "Display case"
 		
 }
