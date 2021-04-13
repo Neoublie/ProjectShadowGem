@@ -16,11 +16,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public class psItem_Weapon_SteelSword extends SwordItem {
 	
 	public psItem_Weapon_SteelSword(Properties prop) {
-		//super(tier, maxDamage, attackDamage, prop);
 		super(ItemTier.DIAMOND, 20, -1.3F, prop);
-		// TODO Auto-generated constructor stub
-		
-		//public static final Item DIAMOND_SWORD = registerItem("diamond_sword", new SwordItem(ItemTier.DIAMOND, 3, -2.4F, (new Item.Properties()).tab(ItemGroup.TAB_COMBAT)));
 	}
 	
 	@Override

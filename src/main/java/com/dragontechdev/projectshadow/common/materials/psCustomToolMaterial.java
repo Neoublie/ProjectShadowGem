@@ -12,25 +12,25 @@ public enum psCustomToolMaterial implements IItemTier {
 	//=================================================================
 	// TODO WORK ON BALANCED VALUES and decide what materials are valid
 	//=================================================================
-	PSITEM_TOOL_BRASS(4,4000,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_BRASS.get())),
-	PSITEM_TOOL_BRONZE(4,4000,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_BRONZE.get())),
-	PSITEM_TOOL_CONSTANTAN(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_CONSTANTAN.get())),
-	PSITEM_TOOL_COPPER(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_COPPER.get())),
-	PSITEM_TOOL_ELECTRUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_ELECTRUM.get())),
-	PSITEM_TOOL_HEMATITE(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_HEMATITE.get())),
-	PSITEM_TOOL_LEAD(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_LEAD.get())),
-	PSITEM_TOOL_MITHRIL(4,4000,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_MITHRIL.get())),
-	PSITEM_TOOL_NICKEL(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_NICKEL.get())),
-	PSITEM_TOOL_PLATINUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_PLATINUM.get())),
-	//PSITEM_TOOL_RESTONE(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_REDSTONE.get())),
-	PSITEM_TOOL_REFINED_NETHERITE(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_REFINED_NETHERITE.get())),
-	PSITEM_TOOL_SILVER(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_SILVER.get())),
-	PSITEM_TOOL_STEEL(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_STEEL.get())),
-	PSITEM_TOOL_TIN(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_TIN.get())),
-	PSITEM_TOOL_TITANIUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_TITANIUM.get())),
-	PSITEM_TOOL_TUNGSTEN(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_TUNGSTEN.get())),
-	//PSITEM_TOOL_URANIUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_URANIUM.get())),
-	PSITEM_TOOL_ZINC(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_ZINC.get()));
+	BRASS(4,4000,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_BRASS.get())),
+	BRONZE(4,4000,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_BRONZE.get())),
+	CONSTANTAN(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_CONSTANTAN.get())),
+	COPPER(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_COPPER.get())),
+	ELECTRUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_ELECTRUM.get())),
+	HEMATITE(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_HEMATITE.get())),
+	LEAD(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_LEAD.get())),
+	MITHRIL(4,4000,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_MITHRIL.get())),
+	NICKEL(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_NICKEL.get())),
+	PLATINUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_PLATINUM.get())),
+	//RESTONE(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_REDSTONE.get())),
+	REFINED_NETHERITE(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_REFINED_NETHERITE.get())),
+	SILVER(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_SILVER.get())),
+	STEEL(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_STEEL.get())),
+	TIN(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_TIN.get())),
+	TITANIUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_TITANIUM.get())),
+	TUNGSTEN(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_TUNGSTEN.get())),
+	//URANIUM(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_URANIUM.get())),
+	ZINC(4,40,15F,2F,17, () -> Ingredient.fromItems(ItemInit.PSITEM_INGOT_ZINC.get()));
 
 	private final int harvestLevel;
 	private final int maxUses;

@@ -1,0 +1,21 @@
+{
+	"type":"minecraft:crafting_shaped",
+	"pattern":[
+		"M",
+		"M",
+		"S"
+	],
+	"key":{
+		"M" : {
+				"item":"projectshadow:psitem_ingot_mithril"
+				//"item":"forge:ingots/mithril" // TODO Figure out Tags
+		},
+		"S" : {
+				"item":"minecraft:stick"
+		}
+	},
+	"result": {
+		"item":"projectshadow:psitem_weapon_mithril_sword",
+		"count":"1"
+	}
+}

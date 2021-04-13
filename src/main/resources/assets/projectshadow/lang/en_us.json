@@ -7,7 +7,7 @@
 	//-------------------------------------------------------------------------
 	
 	// Armor
-	"item.projectshadow.psitem_armor_divinghelmet" : "Diving helme",
+	"item.projectshadow.psitem_armor_divinghelmet" : "Diving helm",
 	"item.projectshadow.psitem_armor_divingharness" : "Diving harness",
 	"item.projectshadow.psitem_armor_divingflippers" : "Flippers",
 	"item.projectshadow.psitem_armor_divingtank" : "Diving tank",
@@ -54,6 +54,14 @@
 	
 	//"item.projectshadow.psitem_ingot_" : " ingot",
 	
+	"item.projectshadow.psitem_gem_amber_chiped" : "Chipped amber",
+	"item.projectshadow.psitem_gem_amber_flawed" : "Flawed amber",
+	"item.projectshadow.psitem_gem_amber_normal" : "Normal amber",
+	"item.projectshadow.psitem_gem_amber_flawless" : "Flawless amber",
+	"item.projectshadow.psitem_gem_amber_perfect" : "Perfect amber",
+	
+	"item.projectshadow.psitem_gem_amethyst_chiped" : "Chipped amerthyst",
+	
 	//-------------------------------------------------------------------------
 	// Blocks
 	//-------------------------------------------------------------------------
@@ -89,20 +97,20 @@
 	"block.projectshadow.psblock_ore_turquoise" : "Turqupose ore",
 	"block.projectshadow.psblock_ore_zircon" : "Zircon ore",
 	
-	// Machines
+	// - Machines
 	"block.projectshadow.psblock_anvil" : "Jewellers Anvil",
 	"block.projectshadow.psblock_grindstone" : "Jewellers Grindstone",
 	"block.projectshadow.psblock_jewellerstable" : "Jewellers Table",
 	"block.projectshadow.psblock_smeltery" : "Jewellers Smeltery",
 	
-	// Multiblock components
+	// - Multiblock components
 	"block.projectshadow.psblock_alloy_brick" : "Alloy bricks",
 	"block.projectshadow.psblock_blastfurnace_brick" : "Blast furnace bricks",
 	"block.projectshadow.psblock_blastfurnace_hearth" : "Blast furnace hearth",
 	
-	// MISC
-	"block.projectshadow.psblock_displaycase" : "Display case",
+	// - MISC
+	"block.projectshadow.psblock_displaycase" : "Display case"
 	
-	"container.projectshadow.psblock_displaycase" : "Display case"
+	//"container.projectshadow.psblock_displaycase" : "Display case"
 		
 }

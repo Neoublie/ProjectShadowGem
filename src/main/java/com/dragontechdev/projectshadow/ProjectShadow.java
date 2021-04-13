@@ -36,11 +36,11 @@ public class ProjectShadow
     	BlockInit.BASICBLOCKS.register(EventBus);
     	BlockInit.BLOCKS.register(EventBus);
     	
-    	TileEntityTypeInit.TILE_ENTITY_TYPE.register(EventBus);
-    	ContainerTypeInit.CONTAINER_TYPE.register(EventBus);
-    	
     	// Load Item Registry
     	ItemInit.ITEMS.register(EventBus);
+    	
+    	TileEntityTypeInit.TILE_ENTITY_TYPE.register(EventBus);
+    	ContainerTypeInit.CONTAINER_TYPE.register(EventBus);
     	
     	MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeatureInit::addOres);
         MinecraftForge.EVENT_BUS.register(this);
@@ -50,6 +50,16 @@ public class ProjectShadow
     {
 
     }
+
+//  //USE THIS STYLE IF YOU JUST WANT ALL BLOCKS AS ITEMS IN A SINGLE CREATIVE TAB
+//	@SubscribeEvent
+//	public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
+//		BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+//			event.getRegistry()
+//					.register(new BlockItem(block, new Item.Properties().group(ProjectShadow.psCreativeTAB))
+//							.setRegistryName(block.getRegistryName()));
+//		});
+//	}
     
  	public static final ItemGroup psCreativeTAB = new ItemGroup("projectshadowtab")
  	{
