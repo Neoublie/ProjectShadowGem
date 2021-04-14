@@ -3,8 +3,7 @@
 	"ingredient":{
 		"item":"projectshadow:psitem_ingot_copper"
 	},
-	"result": "projectshadow:psitem_ingot_copper"
-	},
+	"result": "projectshadow:psitem_ingot_copper",
 	"experience": 0.6,
 	"cookingtime": 100	
 }

@@ -8,7 +8,6 @@
 	"key":{
 		"M" : {
 				"item":"projectshadow:psitem_ingot_mithril"
-				//"item":"forge:ingots/mithril" // TODO Figure out Tags
 		},
 		"S" : {
 				"item":"minecraft:stick"

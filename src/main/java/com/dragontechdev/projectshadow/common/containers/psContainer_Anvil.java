@@ -1,187 +1,88 @@
-//package com.dragontechdev.projectshadow.common.containers;
-//
-//import javax.annotation.Nullable;
-//
-//import com.dragontechdev.projectshadow.common.tileentities.machines.psTile_Anvil;
-//import com.dragontechdev.projectshadow.core.init.BlockInit;
-//
-//import net.minecraft.entity.player.PlayerEntity;
-//import net.minecraft.entity.player.PlayerInventory;
-//import net.minecraft.inventory.IInventory;
-//import net.minecraft.inventory.container.Container;
-//import net.minecraft.inventory.container.Slot;
-//import net.minecraft.network.PacketBuffer;
-//
-//
-//
-//public class psContainer_Anvil extends Container {
-//	
-//	public final psTile_Anvil tileAnvil;
-//
-////	protected psContainer_Anvil(ContainerType<?> p_i50105_1_, int p_i50105_2_) {
-////		super(p_i50105_1_, p_i50105_2_);
-////		// TODO Auto-generated constructor stub
-////	}
-//	
-//	public psContainer_Anvil(int windowId, PlayerInventory playerInventory, PacketBuffer extraData)
-//	{
-//		this((psTile_Anvil) playerInventory.player.level.getBlockEntity(extraData.readBlockPos()), windowId, playerInventory);
-//	}
-//
-//	public psContainer_Anvil(@Nullable psTile_Anvil tile, int windowId, PlayerInventory playerInventory)
-//	{
-//		super(BlockInit.JEWELLERS_ANVIL_CONTAINER.get(), windowId);
-//		this.tileAnvil = tile;
-//		this.setup(playerInventory, tile);
-//	}
-//	
-//	public void setup(PlayerInventory inventory, IInventory tileForge)
-//	{
-//		this.addSlot(new Slot(tileAnvil, 0, 62, 15));
-//		this.addSlot(new Slot(tileAnvil, 1, 80, 51));
-//		this.addSlot(new Slot(tileAnvil, 2, 62, 87));
-//		this.addSlot(new Slot(tileAnvil, 3, 26, 87));
-//		this.addSlot(new Slot(tileAnvil, 4, 8, 51));
-//		this.addSlot(new Slot(tileAnvil, 5, 26, 15));
-//		//this.addSlot(new SlotOrb(tileAnvil, TileAlchemyTable.orbSlot, 143, 24));
-//		//this.addSlot(new SlotOutput(tileAnvil, TileAlchemyTable.outputSlot, 44, 51));
-//
-//		for (int i = 0; i < 3; i++)
-//		{
-//			for (int j = 0; j < 9; j++)
-//			{
-//				addSlot(new Slot(inventory, j + i * 9 + 9, 8 + j * 18, 123 + i * 18));
-//			}
-//		}
-//
-//		for (int i = 0; i < 9; i++)
-//		{
-//			addSlot(new Slot(inventory, i, 8 + i * 18, 181));
-//		}
-//	}
-//	
-////	@Override
-////	public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, PlayerEntity player)
-////	{
-////		PlayerInventory inventoryPlayer = player.inventory;
-////
-////		if (slotId <= TileAlchemyTable.outputSlot && slotId >= 0)
-////		{
-////			Slot slot = this.getSlot(slotId);
-////			if (!slot.getHasStack() && inventoryPlayer.getItemStack().isEmpty())
-////			{
-//////				((TileAlchemyTable) tileTable).toggleInputSlotAccessible(slotId);
-////				if (tileAnvil.activeSlot == slotId)
-////				{
-////					tileAnvil.activeSlot = -1;
-////				} else
-////				{
-////					tileAnvil.activeSlot = slotId;
-////				}
-////			}
-////		}
-////
-////		return super.slotClick(slotId, dragType, clickTypeIn, player);
-////	}
-//
-////	@Override
-////	public ItemStack transferStackInSlot(PlayerEntity playerIn, int index)
-////	{
-////		ItemStack itemstack = ItemStack.EMPTY;
-////		Slot slot = this.inventorySlots.get(index);
-////
-////		if (slot != null && slot.getHasStack())
-////		{
-////			ItemStack itemstack1 = slot.getStack();
-////			itemstack = itemstack1.copy();
-////
-////			if (index == 7)
-////			{
-////				if (!this.mergeItemStack(itemstack1, 8, 8 + 36, true))
-////				{
-////					return ItemStack.EMPTY;
-////				}
-////
-////				slot.onSlotChange(itemstack1, itemstack);
-////			} else if (index > 7)
-////			{
-////				if (itemstack1.getItem() instanceof IBloodOrb)
-////				{
-////					if (!this.mergeItemStack(itemstack1, 6, 7, false))
-////					{
-////						return ItemStack.EMPTY;
-////					}
-////				} else if (!this.mergeItemStack(itemstack1, 0, 6, false))
-////				{
-////					return ItemStack.EMPTY;
-////				}
-////			} else if (!this.mergeItemStack(itemstack1, 8, 8 + 36, false))
-////			{
-////				return ItemStack.EMPTY;
-////			}
-////
-////			if (itemstack1.getCount() == 0)
-////			{
-////				slot.putStack(ItemStack.EMPTY);
-////			} else
-////			{
-////				slot.onSlotChanged();
-////			}
-////
-////			if (itemstack1.getCount() == itemstack.getCount())
-////			{
-////				return ItemStack.EMPTY;
-////			}
-////
-////			slot.onTake(playerIn, itemstack1);
-////		}
-////
-////		return itemstack;
-////	}
-//
-////	@Override
-////	public boolean canInteractWith(PlayerEntity playerIn)
-////	{
-////		return this.tileAnvil.isUsableByPlayer(playerIn);
-////	}
-//
-////	private class SlotOrb extends Slot
-////	{
-////		public SlotOrb(IInventory inventory, int slotIndex, int x, int y)
-////		{
-////			super(inventory, slotIndex, x, y);
-////		}
-////
-////		@Override
-////		public boolean isItemValid(ItemStack itemStack)
-////		{
-////			return itemStack.getItem() instanceof IBloodOrb;
-////		}
-////	}
-//
-////	private class SlotOutput extends Slot
-////	{
-////		public SlotOutput(IInventory inventory, int slotIndex, int x, int y)
-////		{
-////			super(inventory, slotIndex, x, y);
-////		}
-////
-////		@Override
-////		public boolean isItemValid(ItemStack stack)
-////		{
-////			return false;
-////		}
-////	}
-//
-//	@Override
-//	public boolean stillValid(PlayerEntity p_75145_1_) {
-//		// TODO Auto-generated method stub
-//		return false;
-//	}
-//	
-//	
-//	// -------------------------------------------------------
-//	
-//	
-//	
-//}
+package com.dragontechdev.projectshadow.common.containers;
+
+import java.util.Objects;
+
+import com.dragontechdev.projectshadow.common.tileentities.psTile_DisplayCase;
+import com.dragontechdev.projectshadow.common.tileentities.machines.psTile_Anvil;
+import com.dragontechdev.projectshadow.core.init.BlockInit;
+import com.dragontechdev.projectshadow.core.init.ContainerTypeInit;
+
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.inventory.container.Slot;
+import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketBuffer;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.IWorldPosCallable;
+
+
+public class psContainer_Anvil extends Container {
+
+	public final psTile_Anvil te;
+	private final IWorldPosCallable canInteractWithCallable;
+	
+	public psContainer_Anvil(int windowId, PlayerInventory playerInv, final psTile_Anvil te)
+	{
+		super(ContainerTypeInit.ANVIL_CONTAINER_TYPE.get(), windowId);
+		this.te = te;
+		this.canInteractWithCallable = IWorldPosCallable.of(te.getWorld(), te.getPos());
+		
+		// Tile Entity
+				this.addSlot(new Slot((IInventory) te, 0, 80, 35));
+				
+				// Main Player Inventory
+				for (int row = 0; row < 3; row++)
+				{
+					for (int col = 0; col <9; col++) {
+						this.addSlot(new Slot(playerInv, col + row * 9 + 9, 8 + col * 18, 166 - (4 - row) * 18 - 10));
+					}
+					
+				}
+	}
+	
+	public psContainer_Anvil(final int windowId, final PlayerInventory playerInv, final PacketBuffer data) {
+		this(windowId, playerInv, getTileEntity(playerInv, data));
+	}
+	
+	public static psTile_Anvil getTileEntity(final PlayerInventory playerInv, final PacketBuffer data)
+	{
+		Objects.requireNonNull(playerInv, "Player inventory cannot be null");
+		Objects.requireNonNull(data, "Packet buffer cannot be null");
+		final TileEntity te = playerInv.player.world.getTileEntity(data.readBlockPos());
+		if (te instanceof psTile_Anvil ) {
+			return (psTile_Anvil) te;
+		}
+		throw new IllegalStateException("Tile entity is not correct");		
+	}
+	
+	@Override
+	public boolean canInteractWith(PlayerEntity playerIn) {
+		return isWithinUsableDistance(canInteractWithCallable, playerIn, BlockInit.MACHINE_ANVIL.get());
+	}
+	
+	@Override
+	public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
+		ItemStack stack = ItemStack.EMPTY;
+		Slot slot = this.inventorySlots.get(index);
+		if (slot != null && slot.getHasStack()) {
+			ItemStack stack1 = slot.getStack();
+			stack = stack1.copy();
+			if (index < psTile_DisplayCase.slots && !this.mergeItemStack(stack1, psTile_DisplayCase.slots, this.inventorySlots.size(), true)) {
+				return ItemStack.EMPTY;
+			}
+			
+			if (!this.mergeItemStack(stack1, psTile_DisplayCase.slots, this.inventorySlots.size(), false)) {
+				
+			}
+			
+			if (stack1.isEmpty()) {
+				slot.putStack(ItemStack.EMPTY);
+			} else {
+				slot.onSlotChanged();
+			}
+		}
+		return stack;
+	}
+}

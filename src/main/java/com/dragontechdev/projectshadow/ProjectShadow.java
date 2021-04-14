@@ -50,16 +50,6 @@ public class ProjectShadow
     {
 
     }
-
-//  //USE THIS STYLE IF YOU JUST WANT ALL BLOCKS AS ITEMS IN A SINGLE CREATIVE TAB
-//	@SubscribeEvent
-//	public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
-//		BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
-//			event.getRegistry()
-//					.register(new BlockItem(block, new Item.Properties().group(ProjectShadow.psCreativeTAB))
-//							.setRegistryName(block.getRegistryName()));
-//		});
-//	}
     
  	public static final ItemGroup psCreativeTAB = new ItemGroup("projectshadowtab")
  	{

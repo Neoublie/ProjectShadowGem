@@ -1,7 +1,7 @@
 package com.dragontechdev.projectshadow.client.screens;
 
 import com.dragontechdev.projectshadow.ProjectShadow;
-import com.dragontechdev.projectshadow.common.containers.psContainer_DisplayCase;
+import com.dragontechdev.projectshadow.common.containers.psContainer_Anvil;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
@@ -14,11 +14,11 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 
 
 @OnlyIn(Dist.CLIENT)
-public class psScreen_DisplayCase extends ContainerScreen<psContainer_DisplayCase>{
+public class psScreen_Anvil extends ContainerScreen<psContainer_Anvil>{
 	
-	private static final ResourceLocation DISPLAY_CASE_GUI = new ResourceLocation(ProjectShadow.MOD_ID, "textures/gui/display_case.png");
+	private static final ResourceLocation ANVIL_GUI = new ResourceLocation(ProjectShadow.MOD_ID, "textures/gui/display_case.png");
 
-	public psScreen_DisplayCase(psContainer_DisplayCase screenContainer, PlayerInventory inv, ITextComponent titleIn) {
+	public psScreen_Anvil(psContainer_Anvil screenContainer, PlayerInventory inv, ITextComponent titleIn) {
 		super(screenContainer, inv, titleIn);
 
 		this.guiLeft = 0;
@@ -46,7 +46,7 @@ public class psScreen_DisplayCase extends ContainerScreen<psContainer_DisplayCas
 	@Override
 	protected void drawGuiContainerBackgroundLayer(MatrixStack matrixStack, float partialTicks, int mouseX, int mouseY) {
 		RenderSystem.color4f(1f, 1f, 1f, 1f);
-		this.minecraft.textureManager.bindTexture(DISPLAY_CASE_GUI);
+		this.minecraft.textureManager.bindTexture(ANVIL_GUI);
 		int x = (this.width - this.xSize) /2;
 		int y = (this.height - this.ySize) /2;
 		this.blit(matrixStack, x, y, 0, 0, this.xSize, this.ySize);

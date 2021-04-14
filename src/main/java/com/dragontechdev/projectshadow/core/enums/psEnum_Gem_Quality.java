@@ -7,6 +7,7 @@ public enum psEnum_Gem_Quality {
 	FLAWLESS(true),
 	PERFECT(true);
 
+	@SuppressWarnings("unused")
 	private final boolean isGlowing;
 
 	psEnum_Gem_Quality(boolean isGlowing) {

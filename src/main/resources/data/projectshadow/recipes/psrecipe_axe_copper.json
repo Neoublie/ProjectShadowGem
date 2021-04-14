@@ -1,6 +1,7 @@
 {
 	"type":"minecraft:crafting_shaped",
-	"pattern":[
+	"pattern": 
+	[
 		"CCC",
 		" S ",
 		" S "
@@ -17,5 +18,4 @@
 		"item":"projectshadow:psitem_tool_copperaxe",
 		"count":"1"
 	}
-	
 }

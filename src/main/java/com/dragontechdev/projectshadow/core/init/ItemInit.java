@@ -3,8 +3,8 @@ package com.dragontechdev.projectshadow.core.init;
 import com.dragontechdev.projectshadow.ProjectShadow;
 import com.dragontechdev.projectshadow.common.items.gems.psItem_Base_Gem;
 import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_BrassKnuckles;
-import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_MithrilSword;
-import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_SilverSword;
+//import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_MithrilSword;
+//import com.dragontechdev.projectshadow.common.items.weapons.psItem_Weapon_SilverSword;
 import com.dragontechdev.projectshadow.common.materials.psCustomArmorMaterial;
 import com.dragontechdev.projectshadow.common.materials.psCustomToolMaterial;
 import com.dragontechdev.projectshadow.core.enums.psEnum_Gem_Quality;
@@ -121,6 +121,7 @@ public class ItemInit {
 	public static final RegistryObject<psItem_Base_Gem> PSITEM_GEM_AMBER_PERFECT = ITEMS.register("psitem_gem_amber_perfect", () -> new psItem_Base_Gem(new Item.Properties().group(ProjectShadow.psCreativeTAB), psEnum_Gem_Quality.PERFECT));
 	
 	public static final RegistryObject<Item> PSITEM_GEM_AMETHYST = ITEMS.register("psitem_gem_amethyst_chipped", () -> new Item(new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+
 //	public static final Item amberChippedGem = new Item(defaultBuilder());
 //	public static final Item amethystChippedGem = new Item(defaultBuilder());
 //	public static final Item aquamarineChippedGem = new Item(defaultBuilder());
