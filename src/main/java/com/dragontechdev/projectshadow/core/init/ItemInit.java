@@ -100,7 +100,7 @@ public class ItemInit {
 	public static final RegistryObject<BlockItem> PSBLOCK_ORE_URANIUM = ITEMS.register("psblock_ore_uranium", () -> new BlockItem(BlockInit.ORE_URANIUM.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_ORE_ZINC = ITEMS.register("psblock_ore_zinc", () -> new BlockItem(BlockInit.ORE_ZINC.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	
-	public static final RegistryObject<BlockItem> PSBLOCK_DISPLAY_CASE = ITEMS.register("psblock_display_case", () -> new BlockItem(BlockInit.DISPLAY_CASE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
+	public static final RegistryObject<BlockItem> PSBLOCK_DISPLAY_CASE = ITEMS.register("psblock_displaycase", () -> new BlockItem(BlockInit.DISPLAY_CASE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	
 	public static final RegistryObject<BlockItem> PSBLOCK_ANVIL = ITEMS.register("psblock_anvil", () -> new BlockItem(BlockInit.MACHINE_ANVIL.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
 	public static final RegistryObject<BlockItem> PSBLOCK_GRINDSTONE = ITEMS.register("psblock_grindstone", () -> new BlockItem(BlockInit.MACHINE_GRINDSTONE.get(), new Item.Properties().group(ProjectShadow.psCreativeTAB)));
