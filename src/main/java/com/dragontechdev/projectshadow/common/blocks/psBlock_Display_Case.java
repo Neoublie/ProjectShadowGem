@@ -34,7 +34,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 
-public class psBlock_DisplayCase extends Block {
+public class psBlock_Display_Case extends Block {
 
 	public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
 	
@@ -66,7 +66,7 @@ public class psBlock_DisplayCase extends Block {
 			Block.makeCuboidShape(12, 10, 3, 13, 11, 13)
 			).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get();
 	
-	public psBlock_DisplayCase() {
+	public psBlock_Display_Case() {
 		super(AbstractBlock.Properties.create(Material.IRON, MaterialColor.GRAY).hardnessAndResistance(15F)
 				.sound(SoundType.METAL));
 		

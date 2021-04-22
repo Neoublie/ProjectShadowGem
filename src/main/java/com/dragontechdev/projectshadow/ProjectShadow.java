@@ -51,12 +51,22 @@ public class ProjectShadow
 
     }
     
- 	public static final ItemGroup psCreativeTAB = new ItemGroup("projectshadowtab")
+    
+ 	public static final ItemGroup psMainTAB = new ItemGroup("projectshadowtab")
  	{
  		@Override
  		public ItemStack createIcon()
  		{
- 			return new ItemStack(BlockInit.DISPLAY_CASE.get());
+ 			return new ItemStack(ItemInit.PSITEM_TOOL_COPPER_PICKAXE.get());
+ 		}
+ 	};
+    
+ 	public static final ItemGroup psGemsTAB = new ItemGroup("projectshadowtab")
+ 	{
+ 		@Override
+ 		public ItemStack createIcon()
+ 		{
+ 			return new ItemStack(ItemInit.PSITEM_GEM_AMBER_CHIPED.get());
  		}
  	};
 }

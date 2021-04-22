@@ -1,9 +1,9 @@
 {
 	"type":"minecraft:smelting",
 	"ingredient":{
-		"item":"projectshadow:psblock_ore_copper"
+		"item":"projectshadow:psblock_ore_zinc"
 	},
-	"result": "projectshadow:psitem_ingot_copper",
+	"result": "projectshadow:psitem_ingot_zinc",
 	"experience": 0.6,
 	"cookingtime": 100	
 }

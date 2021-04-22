@@ -1,0 +1,18 @@
+package com.dragontechdev.projectshadow.core.enums;
+
+public enum psEnum_Effects {
+	BRAWLER,
+	AWARENESS,
+	STEALTH,
+	KNOCKBACK,
+	FLAME_RESIST,
+	LAVA_STRIDER,
+	HASTE,
+	JUMP_ASSIST,
+	FEATHER_FALLING,
+	SLOW_FALL,
+	CLOUD_WALKING,
+	NIMBLE_FINGERS,
+	LOOT_FINDER,
+	STEP_ASSIST	
+}

@@ -1,12 +1,11 @@
 {
 	"type":"minecraft:crafting_shaped",
-	"pattern": 
-	[
+	"pattern": [
 		"CCC",
 		" S ",
 		" S "
 	],
-	"key":{
+	"key": {
 		"C" : {
 				"item":"projectshadow:psitem_ingot_copper"
 		},
@@ -16,6 +15,6 @@
 	},
 	"result": {
 		"item":"projectshadow:psitem_tool_copperaxe",
-		"count":"1"
+		"count": 1
 	}
 }

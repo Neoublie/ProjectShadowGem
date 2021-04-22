@@ -1,0 +1,9 @@
+{
+	"type":"minecraft:smelting",
+	"ingredient":{
+		"item":"projectshadow:psblock_ore_hematite"
+	},
+	"result": "projectshadow:psitem_ingot_hematite",
+	"experience": 0.6,
+	"cookingtime": 100	
+}

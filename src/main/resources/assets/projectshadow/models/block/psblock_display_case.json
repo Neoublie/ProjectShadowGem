@@ -1,8 +1,8 @@
 {
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "projectshadow:blocks/psblock_displaycase",
-		"particle": "projectshadow:blocks/psblock_displaycase"
+		"0": "projectshadow:blocks/psblock_display_case",
+		"particle": "projectshadow:blocks/psblock_display_case"
 	},
 	"elements": [
 		{

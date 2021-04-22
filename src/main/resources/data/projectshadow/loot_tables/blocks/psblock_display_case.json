@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "projectshadow:psblock_displaycase"
+          "name": "projectshadow:psblock_display_case"
         }
       ]
     }

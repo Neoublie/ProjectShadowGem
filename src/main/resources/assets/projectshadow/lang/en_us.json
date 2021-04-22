@@ -18,10 +18,11 @@
 	"item.projectshadow.psitem_armor_mithril_boots" : "Mithril boots",
 	
 	// MISC
-		
+			
 	
 	// Tools
 	"item.projectshadow.psitem_tool_copperaxe" : "Copper axe",
+	"item.projectshadow.psitem_tool_copper_pickaxe" : "Copper pickaxe",
 	
 	// Weapons
 	"item.projectshadow.psitem_weapon_brass_knuckles" : "Brass knuckles",
@@ -52,15 +53,97 @@
 	"item.projectshadow.psitem_ingot_refined_netherite" : "Refined Netherite",
 	"item.projectshadow.psitem_ingot_steel" : "Steel ingot",
 	
-	//"item.projectshadow.psitem_ingot_" : " ingot",
 	
-	"item.projectshadow.psitem_gem_amber_chiped" : "Chipped amber",
+	// Gems
+	"item.projectshadow.psitem_gem_amber_chipped" : "Chipped amber",
 	"item.projectshadow.psitem_gem_amber_flawed" : "Flawed amber",
 	"item.projectshadow.psitem_gem_amber_normal" : "Normal amber",
 	"item.projectshadow.psitem_gem_amber_flawless" : "Flawless amber",
 	"item.projectshadow.psitem_gem_amber_perfect" : "Perfect amber",
 	
-	"item.projectshadow.psitem_gem_amethyst_chiped" : "Chipped amerthyst",
+	"item.projectshadow.psitem_gem_amethyst_chipped" : "Chipped amerthyst",
+	"item.projectshadow.psitem_gem_amethyst_flawed" : "Flawed amerthyst",
+	"item.projectshadow.psitem_gem_amethyst_normal" : "Normal amerthyst",
+	"item.projectshadow.psitem_gem_amethyst_flawless" : "Flawless amerthyst",
+	"item.projectshadow.psitem_gem_amethyst_perfect" : "Perfect amerthyst",
+	
+	"item.projectshadow.psitem_gem_aquamarine_chipped" : "Chipped aquamarine",
+	"item.projectshadow.psitem_gem_aquamarine_flawed" : "Flawed aquamarine",
+	"item.projectshadow.psitem_gem_aquamarine_normal" : "Normal aquamarine",
+	"item.projectshadow.psitem_gem_aquamarine_flawless" : "Flawless aquamarine",
+	"item.projectshadow.psitem_gem_aquamarine_perfect" : "Perfect aquamarine",
+	
+	"item.projectshadow.psitem_gem_jade_chipped" : "Chipped jade",
+	"item.projectshadow.psitem_gem_jade_flawed" : "Flawed jade",
+	"item.projectshadow.psitem_gem_jade_normal" : "Normal jade",
+	"item.projectshadow.psitem_gem_jade_flawless" : "Flawless jade",
+	"item.projectshadow.psitem_gem_jade_perfect" : "Perfect jade",
+	
+	"item.projectshadow.psitem_gem_moonstone_chipped" : "Chipped moonstone",
+	"item.projectshadow.psitem_gem_moonstone_flawed" : "Flawed moonstone",
+	"item.projectshadow.psitem_gem_moonstone_normal" : "Normal moonstone",
+	"item.projectshadow.psitem_gem_moonstone_flawless" : "Flawless moonstone",
+	"item.projectshadow.psitem_gem_moonstone_perfect" : "Perfect moonstone",
+	
+	"item.projectshadow.psitem_gem_onyx_chipped" : "Chipped onyx",
+	"item.projectshadow.psitem_gem_onyx_flawed" : "Flawed onyx",
+	"item.projectshadow.psitem_gem_onyx_normal" : "Normal onyx",
+	"item.projectshadow.psitem_gem_onyx_flawless" : "Flawless onyx",
+	"item.projectshadow.psitem_gem_onyx_perfect" : "Perfect onyx",
+	
+	"item.projectshadow.psitem_gem_opalstone_chipped" : "Chipped opalstone",
+	"item.projectshadow.psitem_gem_opalstone_flawed" : "Flawed opalstone",
+	"item.projectshadow.psitem_gem_opalstone_normal" : "Normal opalstone",
+	"item.projectshadow.psitem_gem_opalstone_flawless" : "Flawless opalstone",
+	"item.projectshadow.psitem_gem_opalstone_perfect" : "Perfect opalstone",
+	
+	"item.projectshadow.psitem_gem_painite_chipped" : "Chipped painite",
+	"item.projectshadow.psitem_gem_painite_flawed" : "Flawed painite",
+	"item.projectshadow.psitem_gem_painite_normal" : "Normal painite",
+	"item.projectshadow.psitem_gem_painite_flawless" : "Flawless painite",
+	"item.projectshadow.psitem_gem_painite_perfect" : "Perfect painite",
+	
+	"item.projectshadow.psitem_gem_pinkquartz_chipped" : "Chipped pink quartz",
+	"item.projectshadow.psitem_gem_pinkquartz_flawed" : "Flawed pink quartz",
+	"item.projectshadow.psitem_gem_pinkquartz_normal" : "Normal pink quartz",
+	"item.projectshadow.psitem_gem_pinkquartz_flawless" : "Flawless pink quartz",
+	"item.projectshadow.psitem_gem_pinkquartz_perfect" : "Perfect pink quartz",
+	
+	"item.projectshadow.psitem_gem_ruby_chipped" : "Chipped ruby",
+	"item.projectshadow.psitem_gem_ruby_flawed" : "Flawed ruby",
+	"item.projectshadow.psitem_gem_ruby_normal" : "Normal ruby",
+	"item.projectshadow.psitem_gem_ruby_flawless" : "Flawless ruby",
+	"item.projectshadow.psitem_gem_ruby_perfect" : "Perfect ruby",
+	
+	"item.projectshadow.psitem_gem_sapphire_chipped" : "Chipped sapphire",
+	"item.projectshadow.psitem_gem_sapphire_flawed" : "Flawed sapphire",
+	"item.projectshadow.psitem_gem_sapphire_normal" : "Normal sapphire",
+	"item.projectshadow.psitem_gem_sapphire_flawless" : "Flawless sapphire",
+	"item.projectshadow.psitem_gem_sapphire_perfect" : "Perfect sapphire",
+	
+	"item.projectshadow.psitem_gem_sunstone_chipped" : "Chipped sunstone",
+	"item.projectshadow.psitem_gem_sunstone_flawed" : "Flawed sunstone",
+	"item.projectshadow.psitem_gem_sunstone_normal" : "Normal sunstone",
+	"item.projectshadow.psitem_gem_sunstone_flawless" : "Flawless sunstone",
+	"item.projectshadow.psitem_gem_sunstone_perfect" : "Perfect sunstone",
+	
+	"item.projectshadow.psitem_gem_topaz_chipped" : "Chipped topaz",
+	"item.projectshadow.psitem_gem_topaz_flawed" : "Flawed topaz",
+	"item.projectshadow.psitem_gem_topaz_normal" : "Normal topaz",
+	"item.projectshadow.psitem_gem_topaz_flawless" : "Flawless topaz",
+	"item.projectshadow.psitem_gem_topaz_perfect" : "Perfect topaz",
+	
+	"item.projectshadow.psitem_gem_turquoise_chipped" : "Chipped turquoise",
+	"item.projectshadow.psitem_gem_turquoise_flawed" : "Flawed turquoise",
+	"item.projectshadow.psitem_gem_turquoise_normal" : "Normal turquoise",
+	"item.projectshadow.psitem_gem_turquoise_flawless" : "Flawless turquoise",
+	"item.projectshadow.psitem_gem_turquoise_perfect" : "Perfect turquoise",
+	
+	"item.projectshadow.psitem_gem_zircon_chipped" : "Chipped zircon",
+	"item.projectshadow.psitem_gem_zircon_flawed" : "Flawed zircon",
+	"item.projectshadow.psitem_gem_zircon_normal" : "Normal zircon",
+	"item.projectshadow.psitem_gem_zircon_flawless" : "Flawless zircon",
+	"item.projectshadow.psitem_gem_zircon_perfect" : "Perfect zircon",
 	
 	//-------------------------------------------------------------------------
 	// Blocks
@@ -87,14 +170,14 @@
 	"block.projectshadow.psblock_ore_jade" : "Jade ore",
 	"block.projectshadow.psblock_ore_moonstone" : "Moonstone ore",
 	"block.projectshadow.psblock_ore_onyx" : "Onyx ore",
-	"block.projectshadow.psblock_ore_opalstone" : "Opal stone ore",
+	"block.projectshadow.psblock_ore_opalstone" : "Opalstone ore",
 	"block.projectshadow.psblock_ore_painite" : "Painite ore",
 	"block.projectshadow.psblock_ore_pinkquartz" : "Pink quartz ore",
 	"block.projectshadow.psblock_ore_ruby" : "Ruby ore",
 	"block.projectshadow.psblock_ore_sapphire" : "Sapphire ore",
 	"block.projectshadow.psblock_ore_sunstone" : "Sunstone ore",
 	"block.projectshadow.psblock_ore_topaz" : "Topaz ore",
-	"block.projectshadow.psblock_ore_turquoise" : "Turqupose ore",
+	"block.projectshadow.psblock_ore_turquoise" : "Turquoise ore",
 	"block.projectshadow.psblock_ore_zircon" : "Zircon ore",
 	
 	// - Machines
@@ -109,8 +192,8 @@
 	"block.projectshadow.psblock_blastfurnace_hearth" : "Blast furnace hearth",
 	
 	// - MISC
-	"block.projectshadow.psblock_displaycase" : "Display case"
+	"block.projectshadow.psblock_display_case" : "Display case",
 	
-	//"container.projectshadow.psblock_displaycase" : "Display case"
+	"container.projectshadow.psblock_display_case" : "Display case"
 		
 }

@@ -1,7 +1,7 @@
 package com.dragontechdev.projectshadow.core.init;
 
 import com.dragontechdev.projectshadow.ProjectShadow;
-import com.dragontechdev.projectshadow.common.blocks.psBlock_DisplayCase;
+import com.dragontechdev.projectshadow.common.blocks.psBlock_Display_Case;
 import com.dragontechdev.projectshadow.common.blocks.machines.psBlock_Anvil;
 import com.dragontechdev.projectshadow.common.blocks.machines.psBlock_GrindStone;
 import com.dragontechdev.projectshadow.common.blocks.machines.psBlock_JewellersTable;
@@ -86,7 +86,7 @@ public class BlockInit {
 	
 	// Machines
 	public static final RegistryObject<Block> MACHINE_ANVIL = BLOCKS.register("psblock_anvil", () -> new psBlock_Anvil());
-	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("psblock_displaycase", () -> new psBlock_DisplayCase()); // TODO maybe re-purpose this from tutorial to something better 
+	public static final RegistryObject<Block> DISPLAY_CASE = BLOCKS.register("psblock_display_case", () -> new psBlock_Display_Case()); // TODO maybe re-purpose this from tutorial to something better 
 	
 	//TODO build TileEntities for these
 	public static final RegistryObject<Block> MACHINE_GRINDSTONE = BLOCKS.register("psblock_grindstone", () -> new psBlock_GrindStone(Properties.create(Material.IRON)));
