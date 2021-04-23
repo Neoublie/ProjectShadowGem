@@ -66,44 +66,44 @@ public class ItemInit {
 	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_AMULET = ITEMS.register("psitem_reinforced_netherite_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
 	
 	// Rings
-	public static final RegistryObject<Item> PSITEM_SILVER_RING = ITEMS.register("psitem_silver_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_GOLD_RING = ITEMS.register("psitem_gold_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_MITHRIL_RING = ITEMS.register("psitem_mithril_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_PLATINUM_RING = ITEMS.register("psitem_platinum_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_TITANIUM_RING = ITEMS.register("psitem_titanium_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_RING = ITEMS.register("psitem_reinforced_netherite_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_SILVER_RING = ITEMS.register("psitem_silver_ring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_GOLD_RING = ITEMS.register("psitem_gold_ring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_MITHRIL_RING = ITEMS.register("psitem_mithril_ring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_PLATINUM_RING = ITEMS.register("psitem_platinum_ring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_TITANIUM_RING = ITEMS.register("psitem_titanium_ring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_RING = ITEMS.register("psitem_reinforced_netherite_ring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
 	
 	// Earrings
-	public static final RegistryObject<Item> PSITEM_SILVER_EARRING = ITEMS.register("psitem_silver_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_GOLD_EARRING = ITEMS.register("psitem_gold_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_MITHRIL_EARRING = ITEMS.register("psitem_mithril_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_PLATINUM_EARRING = ITEMS.register("psitem_platinum_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_TITANIUM_EARRING = ITEMS.register("psitem_titanium_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_EARRING = ITEMS.register("psitem_reinforced_netherite_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));	
+	public static final RegistryObject<Item> PSITEM_SILVER_EARRING = ITEMS.register("psitem_silver_earring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_GOLD_EARRING = ITEMS.register("psitem_gold_earring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_MITHRIL_EARRING = ITEMS.register("psitem_mithril_earring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_PLATINUM_EARRING = ITEMS.register("psitem_platinum_earring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_TITANIUM_EARRING = ITEMS.register("psitem_titanium_earring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_EARRING = ITEMS.register("psitem_reinforced_netherite_earring", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));	
 
 	// Buckles
-	public static final RegistryObject<Item> PSITEM_SILVER_BUCKLE = ITEMS.register("psitem_silver_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_GOLD_BUCKLE = ITEMS.register("psitem_gold_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_MITHRIL_BUCKLE = ITEMS.register("psitem_mithril_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_PLATINUM_BUCKLE = ITEMS.register("psitem_platinum_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_TITANIUM_BUCKLE = ITEMS.register("psitem_titanium_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_BUCKLE = ITEMS.register("psitem_reinforced_netherite_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_SILVER_BUCKLE = ITEMS.register("psitem_silver_buckle", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_GOLD_BUCKLE = ITEMS.register("psitem_gold_buckle", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_MITHRIL_BUCKLE = ITEMS.register("psitem_mithril_buckle", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_PLATINUM_BUCKLE = ITEMS.register("psitem_platinum_buckle", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_TITANIUM_BUCKLE = ITEMS.register("psitem_titanium_buckle", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_BUCKLE = ITEMS.register("psitem_reinforced_netherite_buckle", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
 	
 	// Bracelets
-	public static final RegistryObject<Item> PSITEM_SILVER_BRACELET = ITEMS.register("psitem_silver_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_GOLD_BRACELET = ITEMS.register("psitem_gold_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_MITHRIL_BRACELET = ITEMS.register("psitem_mithril_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_PLATINUM_BRACELET = ITEMS.register("psitem_platinum_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_TITANIUM_BRACELET = ITEMS.register("psitem_titanium_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_BRACELET = ITEMS.register("psitem_reinforced_netherite_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_SILVER_BRACELET = ITEMS.register("psitem_silver_bracelet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_GOLD_BRACELET = ITEMS.register("psitem_gold_bracelet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_MITHRIL_BRACELET = ITEMS.register("psitem_mithril_bracelet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_PLATINUM_BRACELET = ITEMS.register("psitem_platinum_bracelet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_TITANIUM_BRACELET = ITEMS.register("psitem_titanium_bracelet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_BRACELET = ITEMS.register("psitem_reinforced_netherite_bracelet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
 	
 	// Anklets
-	public static final RegistryObject<Item> PSITEM_SILVER_ANKLET = ITEMS.register("psitem_silver_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_GOLD_ANKLET = ITEMS.register("psitem_gold_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_MITHRIL_ANKLET = ITEMS.register("psitem_mithril_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_PLATINUM_ANKLET = ITEMS.register("psitem_platinum_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_TITANIUM_ANKLET = ITEMS.register("psitem_titanium_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
-	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_ANKLET = ITEMS.register("psitem_reinforced_netherite_amulet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_SILVER_ANKLET = ITEMS.register("psitem_silver_anklet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_GOLD_ANKLET = ITEMS.register("psitem_gold_anklet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_MITHRIL_ANKLET = ITEMS.register("psitem_mithril_anklet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_PLATINUM_ANKLET = ITEMS.register("psitem_platinum_anklet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_TITANIUM_ANKLET = ITEMS.register("psitem_titanium_anklet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
+	public static final RegistryObject<Item> PSITEM_REINFORED_NETHERITE_ANKLET = ITEMS.register("psitem_reinforced_netherite_anklet", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));
 	
 	// MISC
 	public static final RegistryObject<Item> PSITEM_ARMOR_DIVINGTANK = ITEMS.register("psitem_armor_divingtank", () -> new Item(new Item.Properties().group(ProjectShadow.psMainTAB)));

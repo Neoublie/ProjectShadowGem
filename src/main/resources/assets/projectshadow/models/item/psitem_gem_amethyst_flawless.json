@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "projectshadow:items/gems/psitem_gem_amerthyst_flawless"
+        "layer0": "projectshadow:items/gems/psitem_gem_amethyst_flawless"
     }
 }

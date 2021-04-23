@@ -16,7 +16,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 @OnlyIn(Dist.CLIENT)
 public class psScreen_DisplayCase extends ContainerScreen<psContainer_DisplayCase>{
 	
-	private static final ResourceLocation DISPLAY_CASE_GUI = new ResourceLocation(ProjectShadow.MOD_ID, "textures/gui/display_case.png");
+	private static final ResourceLocation DISPLAY_CASE_GUI = new ResourceLocation(ProjectShadow.MOD_ID, "textures/gui/psblock_display_case.png");
 
 	public psScreen_DisplayCase(psContainer_DisplayCase screenContainer, PlayerInventory inv, ITextComponent titleIn) {
 		super(screenContainer, inv, titleIn);
